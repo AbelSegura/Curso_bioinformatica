@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none;}
+
+button{ 
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    background-color: crimson;
+
+}
+ button:hover{ 
+    background-color: rgba(148, 16, 24, 0.95);
+ }
+
+.container{
+    max-width: 1400px;
+    margin: auto
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.8em;
+}
+
+header .container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+     
+}
+
+
+header a{
+
+ padding: 5px 12px;
+ text-decoration: none;
+ font-weight: bold;
+ color: black;   
+}
+
+header a:hover{
+    color: crimson;
+}
+
+#hero{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color:#221d1d;
+    background-image:  linear-gradient(
+        0deg
+        rgb(0, 0,0, 0.5)
+        rgb(0, 0,0, 0.5)
+    );
+    background-image: url(bioinformatica-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#SomosUAG{ 
+    text-align: center;
+    padding: 200px, 12px;
+
+} 
+
+#Cursos{
+    background-color: rgb(30, 30, 30);
+    color: #a79e9e;
+    text-align: center;
+}
+
+#Cursos .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#Cursos h2{
+    margin-top: 10px;
+}
+
+#Cursos p{
+    display: none;
+}
+
+#Cursos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:  linear-gradient(
+        0deg
+        rgb(0, 0,0, 0.5)
+        rgb(0, 0,0, 0.5)
+    );
+    background-image: url("RNA.png");
+}
+
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg
+        rgb(0, 0,0, 0.5)
+        rgb(0, 0,0, 0.5)
+    );
+    background-image: url("chip.jpg");
+}
+
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+        0deg
+        rgb(0, 0,0, 0.5)
+        rgb(0, 0,0, 0.5)
+    );
+    background-image: url("ATAC.png");
+}
+
+.carta:nth-child(4){
+    background-image:  linear-gradient(
+        0deg
+        rgb(0, 0,0, 0.5)
+        rgb(0, 0,0, 0.5)
+    );
+    background-image: url("linux-jpg.jfif");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: #a79e9e;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final .button{
+    font-size:  5vw;
+}
+
+footer p{
+    margin: 0;
+    color: #a79e9e;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #SomosUAG .container{
+         display: flex;
+    }
+
+    #SomosUAG .img-container{
+        background-image:  linear-gradient(
+            0deg
+            rgb(0, 0,0, 0.5)
+            rgb(0, 0,0, 0.5)
+        ), url("n.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 300px;
+    }
+}
+
+
